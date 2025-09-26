@@ -1,0 +1,50 @@
+[
+  {
+    "bug_id": "BUG001",
+    "title": "Login button not working on Chrome browser",
+    "severity": "High",
+    "priority": "P1",
+    "steps_to_reproduce": [
+      "Open the application in Chrome",
+      "Navigate to the login page",
+      "Enter valid username and password",
+      "Click the 'Login' button"
+    ],
+    "expected_result": "User should be redirected to the dashboard",
+    "actual_result": "Nothing happens when clicking 'Login'",
+    "environment": "Chrome 117, Windows 11",
+    "status": "Open"
+  },
+  {
+    "bug_id": "BUG002",
+    "title": "Error message not displayed for invalid password",
+    "severity": "Medium",
+    "priority": "P2",
+    "steps_to_reproduce": [
+      "Open the login page",
+      "Enter a valid username",
+      "Enter an incorrect password",
+      "Click the 'Login' button"
+    ],
+    "expected_result": "Error message 'Invalid username or password' should appear",
+    "actual_result": "No error message shown, login page just refreshes",
+    "environment": "Firefox 118, macOS Ventura",
+    "status": "In Progress"
+  },
+  {
+    "bug_id": "BUG003",
+    "title": "Validation missing for empty username and password",
+    "severity": "Low",
+    "priority": "P3",
+    "steps_to_reproduce": [
+      "Navigate to the login page",
+      "Leave username and password fields empty",
+      "Click the 'Login' button"
+    ],
+    "expected_result": "Validation messages should appear for both fields",
+    "actual_result": "No validation message is displayed, form just reloads",
+    "environment": "Edge 116, Windows 10",
+    "status": "Open"
+  }
+]
+
