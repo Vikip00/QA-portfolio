@@ -1,0 +1,86 @@
+Test Case ID: TC001
+Title: Verify user login with valid credentials
+
+Precondition:
+
+User must be registered in the system
+
+Test Steps:
+
+Navigate to the login page
+
+Enter a valid username
+
+Enter a valid password
+
+Click on the "Login" button
+
+Test Data:
+
+Username: testuser
+
+Password: P@ssw0rd
+
+Expected Result:
+
+User should be successfully logged in and redirected to the dashboard
+
+Status:
+
+Pass/Fail
+_____________________________________
+Test Case ID: TC002
+Title: Verify login with invalid password
+
+Precondition:
+
+User account exists in the system
+
+Test Steps:
+
+Navigate to the login page
+
+Enter a valid username
+
+Enter an invalid password
+
+Click on the "Login" button
+
+Test Data:
+
+Username: testuser
+
+Password: WrongPass123
+
+Expected Result:
+
+User should see an error message: "Invalid username or password"
+
+User should remain on the login page
+_____________________________
+Test Case ID: TC003
+Title: Verify login with empty username and password fields
+
+Precondition:
+
+None
+
+Test Steps:
+
+Navigate to the login page
+
+Leave both username and password fields empty
+
+Click on the "Login" button
+
+Test Data:
+
+Username: (empty)
+
+Password: (empty)
+
+Expected Result:
+
+User should see validation messages: "Username is required" and "Password is required"
+
+Login should not proceed
