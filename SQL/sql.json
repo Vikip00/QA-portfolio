@@ -1,0 +1,48 @@
+[
+  {
+    "query_id": "Q001",
+    "title": "Select all users",
+    "sql": "SELECT * FROM users;"
+  },
+  {
+    "query_id": "Q002",
+    "title": "Find user by ID",
+    "sql": "SELECT * FROM users WHERE user_id = 1;"
+  },
+  {
+    "query_id": "Q003",
+    "title": "Insert a new user",
+    "sql": "INSERT INTO users (username, email, password) VALUES ('john_doe', 'john@example.com', 'P@ssw0rd');"
+  },
+  {
+    "query_id": "Q004",
+    "title": "Update user email",
+    "sql": "UPDATE users SET email = 'new_email@example.com' WHERE user_id = 1;"
+  },
+  {
+    "query_id": "Q005",
+    "title": "Delete a user",
+    "sql": "DELETE FROM users WHERE user_id = 1;"
+  },
+  {
+    "query_id": "Q006",
+    "title": "Get all orders with user details (INNER JOIN)",
+    "sql": "SELECT orders.order_id, users.username, users.email, orders.total_amount FROM orders INNER JOIN users ON orders.user_id = users.user_id;"
+  },
+  {
+    "query_id": "Q007",
+    "title": "Get all users and their orders (LEFT JOIN)",
+    "sql": "SELECT users.user_id, users.username, orders.order_id, orders.total_amount FROM users LEFT JOIN orders ON users.user_id = orders.user_id;"
+  },
+  {
+    "query_id": "Q008",
+    "title": "Get all orders even if user data is missing (RIGHT JOIN)",
+    "sql": "SELECT orders.order_id, orders.total_amount, users.username FROM orders RIGHT JOIN users ON orders.user_id = users.user_id;"
+  },
+  {
+    "query_id": "Q009",
+    "title": "Get all users and orders (FULL OUTER JOIN - if supported)",
+    "sql": "SELECT users.user_id, users.username, orders.order_id, orders.total_amount FROM users FULL OUTER JOIN orders ON users.user_id = orders.user_id;"
+  }
+]
+
