@@ -1,0 +1,34 @@
+Test Case ID: TC001
+Title: Verify user login with valid credentials
+
+Precondition:
+
+User must be registered in the system
+
+Test Steps:
+
+Navigate to the login page
+
+Enter a valid username
+
+Enter a valid password
+
+Click on the "Login" button
+
+Test Data:
+
+Username: testuser
+
+Password: P@ssw0rd
+
+Expected Result:
+
+User should be successfully logged in and redirected to the dashboard
+
+Actual Result:
+
+(To be filled after execution)
+
+Status:
+
+Pass/Fail
